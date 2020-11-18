@@ -1,0 +1,228 @@
+
+<style>
+body{
+        margin: 0;
+        font-family: sans-serif;
+        padding: 1%;
+        background-color: 	#ffffff;
+    }
+    .column {
+  float: left;
+  padding: 10px;
+  height: 900px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.middle {
+  width: 70%;;
+}
+
+.boxp1:hover {
+        color: white;
+      }
+    
+      .boxp1{
+        height: 50px;
+        width: 300px;
+        
+        transition-duration: 0.4s;
+        font-size: 16px;
+        text-align: center;
+        background-color: #ffffff;
+        margin-top: 30px;
+        border-radius: 5px;
+        padding: 15px 32px;
+        text-align: center;
+        border-color: blueviolet;
+        border-width: 15px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+    }
+
+
+    .nice1:hover {
+        color: white;
+      }
+    
+      .nice1{
+        height: 80px;
+        width: 80px;
+        
+        /* visibility: hidden; */
+        transition-duration: 0.4s;
+        font-size: 16px;
+        text-align: center;
+        background-color: white;
+        margin-top: 30px;
+        padding: 15px 32px;
+        text-align: center;
+        border-color: blueviolet;
+        border-width: 15px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+    }
+/* #myp2
+{
+  visibility: hidden;
+} */
+
+
+</style>
+
+  
+<!DOCTYPE HTML>
+<html>
+
+<head>
+</head>
+<body>
+      
+    
+
+
+<div class="row">
+  <div class="column left" style="background-color:		#bbbbbb; ">
+    <table>
+
+      <tr><div class="boxp1"  draggable="true"  onclick="demoVisibility()" id="letters"  > <b>Letters</b></div></tr>
+      <tr> <div class="boxp1"  draggable="true" onclick="phonics()" id="phonics"  ><b>Phonics</b></div></tr>
+      <tr> <div class="boxp1"  draggable="true"  id="rhymes"  ><b> Rhymes</b></div></tr>
+       <tr><div class="boxp1"  draggable="true"  id="stories"  > <b>Stories</b></div></tr>
+       <tr> <div class="boxp1"  draggable="true" id="E-book"  > <b>E-Book</b></div></tr>
+       <tr><div class="boxp1"  draggable="true"  id="Activities"  ><b>Activities</b></div></tr>
+       <tr> <div class="boxp1"  draggable="true" id="DemoClasses"  > <b>DemoClasses</b></div></tr>
+       
+
+</table> 
+    
+
+
+  
+
+   
+  
+  </div> 
+<div class="column middle" style="background-color: #F0F8FF;">
+  
+  <div id="myP2" style="display: none;">
+  <table cellpadding="20">
+  
+    <tr>
+      <th><div class="nice1"  id="nice1"  >A </div></th>
+      <th><div class="nice1" id="nice1"  >B</div></th>
+      <th><div class="nice1"  id="nice1"  >C </div></th>
+      <th><div class="nice1"  id="nice1"  >D </div></th>
+      <th><div class="nice1"  id="nice1"  >E </div></th>
+      <th><div class="nice1"  id="nice1"  >F </div></th>
+      <th><div class="nice1"  id="nice1"  >G </div></th>
+    </tr>
+
+    <tr>
+      <th><div class="nice1"  id="nice1"  >H </div></th>
+      <th><div class="nice1" id="nice1"  >I</div></th>
+      <th><div class="nice1"  id="nice1"  >J </div></th>
+      <th><div class="nice1"  id="nice1"  >K </div></th>
+      <th><div class="nice1"  id="nice1"  >L </div></th>
+      <th><div class="nice1"  id="nice1"  >M </div></th>
+      <th><div class="nice1"  id="nice1"  >N </div></th>
+    </tr>
+
+    <tr>
+      <th><div class="nice1"  id="nice1"  >O </div></th>
+      <th><div class="nice1" id="nice1"  >P</div></th>
+      <th><div class="nice1"  id="nice1"  >Q </div></th>
+      <th><div class="nice1"  id="nice1"  >R </div></th>
+      <th><div class="nice1"  id="nice1"  >S </div></th>
+      <th><div class="nice1"  id="nice1"  >T </div></th>
+      <th><div class="nice1"  id="nice1"  >U </div></th>
+    </tr>
+
+    <tr>
+      <th><div class="nice1"  id="nice1"  >W </div></th>
+      <th><div class="nice1" id="nice1"  >X</div></th>
+      <th><div class="nice1"  id="nice1"  >Y </div></th>
+      <th><div class="nice1"  id="nice1"  >Z </div></th>
+  
+    </tr>
+  
+  </table>
+
+  
+
+  </div>
+
+
+  <div id="myP1" style="display: none;">
+    <table cellpadding="20">
+    
+      <tr>
+        <th><div class="nice1"  id="nice1"  >A </div></th>
+        <th><div class="nice1" id="nice1"  >B</div></th>
+        <th><div class="nice1"  id="nice1"  >C </div></th>
+        <th><div class="nice1"  id="nice1"  >D </div></th>
+        <th><div class="nice1"  id="nice1"  >E </div></th>
+        <th><div class="nice1"  id="nice1"  >F </div></th>
+        <th><div class="nice1"  id="nice1"  >G </div></th>
+      </tr>
+  
+      <tr>
+        <th><div class="nice1"  id="nice1"  >H </div></th>
+        <th><div class="nice1" id="nice1"  >I</div></th>
+        <th><div class="nice1"  id="nice1"  >J </div></th>
+        <th><div class="nice1"  id="nice1"  >K </div></th>
+        <th><div class="nice1"  id="nice1"  >L </div></th>
+        <th><div class="nice1"  id="nice1"  >M </div></th>
+        <th><div class="nice1"  id="nice1"  >N </div></th>
+      </tr>
+  
+      <tr>
+        <th><div class="nice1"  id="nice1"  >O </div></th>
+        <th><div class="nice1" id="nice1"  >P</div></th>
+        <th><div class="nice1"  id="nice1"  >Q </div></th>
+        <th><div class="nice1"  id="nice1"  >R </div></th>
+        <th><div class="nice1"  id="nice1"  >S </div></th>
+        <th><div class="nice1"  id="nice1"  >T </div></th>
+        <th><div class="nice1"  id="nice1"  >U </div></th>
+      </tr>
+  
+      <tr>
+        <th><div class="nice1"  id="nice1"  >W </div></th>
+        <th><div class="nice1" id="nice1"  >X</div></th>
+        <th><div class="nice1"  id="nice1"  >Y </div></th>
+        <th><div class="nice1"  id="nice1"  >Z </div></th>
+    
+      </tr>
+    
+    </table>
+  
+    
+  
+    </div>
+  
+<script>
+
+  
+    function demoVisibility() {
+  document.getElementById("myP1").style.display = "none";
+  document.getElementById("myP2").style.display = "block";
+}
+
+function phonics() {
+
+  document.getElementById("myP2").style.display = "none";
+  document.getElementById("myP1").style.display = "block";
+  
+}
+    
+
+  
+
+
+
+</script>
+
+    
+    
